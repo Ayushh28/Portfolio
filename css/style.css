@@ -1,0 +1,313 @@
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+
+.avatar {
+  vertical-align: middle;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 12px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 15px;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+.google {
+  background: #dd4b39;
+  color: white;
+}
+.instagram {
+  background: #125688;
+  color: white;
+}
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+.header-section {
+ background: #deecdf;
+  text-align: center;
+    min-height: 500px;
+}
+.header-section img {
+  margin-top: 5em;
+}
+.header-section h1 {
+  font-family: 'Nunito-Bold';
+  font-size: 4em;
+  text-transform: capitalize;
+  color: #393b3a;
+  padding: 0.5em 0 0 0;
+}
+.header-section span {
+  color: #00cfbd;
+  font-size: 1em;
+}
+.header-section p {
+  font-family: 'Nunito-Bold';
+  font-size: 1.3em;
+  color: #393b3a;
+}
+
+.study-section {
+  padding: 4em 0;
+}
+.study-grid h3 {
+  font-family: 'Nunito-Bold';
+  font-size: 2.5em;
+  text-transform: capitalize;
+  color: #393b3a;
+  
+}
+.study-grid span {
+  color: #00cfbd;
+  font-size: 0.9em;
+}
+.study-grid p {
+  font-size: 1.2em;
+  color: #393b3a;
+  padding: 1.1em 0 0 0;
+  }
+.study-grid label {
+  font-size: 0.8em;
+  color: #9CA69D;
+  margin: 0 0 0 7px;
+}
+.progress {
+	margin: 10px 0;
+	 box-shadow: none;
+}
+.progress-bar-success {
+  background-color: #DEECDF;
+   box-shadow: none;
+}
+.progress-bar-info {
+  background-color: #ACB5B8;
+    box-shadow: none;
+}
+.progress-bar-warning {
+  background-color: #78B3AE;
+   box-shadow: none;
+}
+.progress-bar-danger {
+  background-color: #8C9D82;
+  box-shadow: none;
+  }
+.study-grid h4 {
+  font-size: 1.3em;
+  text-transform: capitalize;
+  color: rgb(29, 26, 26);
+  }
+.study1 {
+  padding: 1em 0 0;
+}
+.study2 {
+  padding: 2em 0 0;
+}
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+.main h3 {
+  font-family: 'Nunito-Bold';
+  font-size: 2.5em;
+  text-transform: capitalize;
+  color: #393b3a;
+  
+}
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+  padding: 9px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+.column:hover {
+  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+form
+{
+  box-sizing: border-box;
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  
+}
+.container .h3{
+	font-family: 'Nunito-Bold';
+  font-size: 2.5em
+}
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+form {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+input{
+	border-bottom: 2px solid red;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+.footer-section{
+	padding:2em 0;
+	text-align:center;
+	background:#deecdf;
+}
+.footer-bottom {
+	margin-top: 1em;
+}
+.footer-top p {
+	font-size: 0.9em;
+	color: #1B1B1B;
+	font-weight: 400;
+}
+
+
